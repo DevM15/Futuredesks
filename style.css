@@ -5,9 +5,7 @@
 
 .testimonial .pic img{
     height: 40vw;
-}
-
-
+}   
 
 /* nav */
 
@@ -26,6 +24,7 @@
     gap: 50px;
     align-items: center;
     text-align: center;
+    overflow: hidden;
 }
 
 .hero h1{
@@ -50,4 +49,13 @@
 .hero span img{
     width: 150px;
     border-radius: 5%;
+}
+
+.row{
+    width: 50vw;
+    margin: auto;
+}
+
+.owl-item{
+        width: 288px;
 }
