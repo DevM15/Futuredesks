@@ -3,15 +3,16 @@
     padding: 0;
 }
 
-.testimonial .pic img{
-    height: 40vw;
-}   
-
 /* nav */
 
 .nav{
     margin: 20px auto;
     max-width: 132px;
+}
+
+.nav img{
+    width: 132px;
+    height: 60px;
 }
 
 /* hero */
@@ -51,11 +52,8 @@
     border-radius: 5%;
 }
 
-.row{
-    width: 50vw;
-    margin: auto;
-}
 
 .owl-item{
-        width: 288px;
+    max-width: 245px;
+    margin: 0 44px;
 }
