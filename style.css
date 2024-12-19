@@ -1,7 +1,13 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
+
+/* .hero,
+.nav{
+    display: none !important;
+} */
 
 /* nav */
 
@@ -52,8 +58,143 @@
     border-radius: 5%;
 }
 
+.testimonial {
+    padding: 80px 0;
+}
 
-.owl-item{
-    max-width: 245px;
-    margin: 0 44px;
+.row{
+    width: 1000px;
+    margin: auto;
+    background-image: url(images/hero-bg.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.single-box {
+    padding: 50px 30px 40px;
+}
+
+.img-area {
+   margin: 45px 0 20px;
+}
+
+.single-box {
+    overflow: hidden
+}
+
+.single-box .img-area {
+    width: 100%;
+    float: left;
+    margin: 0
+}
+
+.testi-carousel-three .single-box {
+    border: 0;
+   padding: 0 50px;
+}
+
+.owl-carousel .owl-item.active.center .single-box {
+    opacity: 1;
+    transform: scale3d(1.2, 1.2, 1.2);
+}
+
+.main {
+  display: flex;
+  margin: 5rem 5rem;
+  gap: 4rem;
+
+}
+
+.wrap {
+  transform-style: preserve-3d;
+  transform: perspective(100rem);
+  cursor: pointer;
+  display: flex;
+  border-radius: 25%;
+}
+
+.container1 {
+  --rX: 0;
+  --rY: 0;
+  --bX: 50%;
+  --bY: 80%;
+
+  width: 40rem;
+  border: 1px solid var(--background-color);
+  border-radius: 1.6rem;
+  position: relative;
+  transform: rotateX(calc(var(--rX) * 1deg)) rotateY(calc(var(--rY) * 1deg));
+
+  box-shadow: 0 0 3rem .5rem hsla(0, 0%, 0%, .2);
+
+  transition: transform .6s 1s;
+}
+
+.container--active {
+  transition: none;
+}
+
+.container--2 {
+  filter: hue-rotate(80deg) saturate(140%);
+}
+
+.container-info h1{
+    font-size: 43px;
+    font-weight: 500;
+    margin-bottom: 1.3rem;
+}
+
+.container-info p{
+    color: #727272;
+    font-size: 17px;
+    margin-bottom: 1.3rem;
+}
+
+.container-info ul{
+    margin-bottom: 1.3rem;
+}
+
+.container-info button{
+    background-color: black;
+    font-size: 18px;
+    color: white;
+    border-radius: 50px;
+    padding: 10px 30px;
+    transition: all 0.3s;
+}
+
+.container-info button:hover{
+    background-color: #12142a;
+    transform: translateY(-3px);
+}
+
+@media only screen and (min-width: 360px) and (max-width: 479px) {
+.testimonial {
+    padding: 70px 0 130px;
+}
+}
+
+@media only screen and (min-width: 320px) and (max-width: 359px) {
+.testimonial {
+    padding: 70px 0 130px;
+}
+
+.single-box {
+    padding: 50px 0 40px;
+}
+
+.single-box .img-area {
+    width: 100%;
+    float: none;
+}
+}
+
+@media only screen and (max-width: 992px){
+    .main{
+        flex-direction: column;
+    }
+    .wrap{
+        margin: auto;
+    }
 }
